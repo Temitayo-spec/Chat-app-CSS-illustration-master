@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentors Challenge | Coding Bootcamp Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Whole container-->
+    <div class="wrapper">
+      <!--Carousel Images container and the  nav button-->
+      <div class="slide-image">
+        <div class="images">
+          <img class="image1 active" src="image-tanya.jpg" alt="" />
+          <img class="image2" src="image-john.jpg" alt="" />
+        </div>
+        <div class="slide-btn">
+          <svg
+            class="prevBtn"
+            onclick="prevSlide();
+            prevSlideText();"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="18"
+          >
+            <path
+              fill="none"
+              stroke="#8585AC"
+              stroke-width="3"
+              d="M11 1L3 9l8 8"
+            />
+          </svg>
+
+          <svg
+            class="nextBtn"
+            onclick="nextSlide();
+            nextSlideText();"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="18"
+          >
+            <path
+              fill="none"
+              stroke="#8585AC"
+              stroke-width="3"
+              d="M2 1l8 8-8 8"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!--Main testimonials-->
+      <section class="section-a">
+        <div class="tanya-text testimonials active">
+          <p class="info active">
+            "I've been interested in coding for a while but never taken the
+            jump, until now. I couldn't recommend this course enough. I'm now in
+            the job of my dreams and so exited about the future."
+          </p>
+
+          <div class="flex">
+            <h3>Tanya Sinclair</h3>
+            <p class="title">UX Engineer</p>
+          </div>
+        </div>
+
+        <div class="john-text testimonials">
+          <p class="info">
+            "If you want to lay the best foundation possible i'd recommend
+            taking this course. The depth the instructors go into is incredible.
+            I now feel so confident about starting up as a professional
+            developer."
+          </p>
+
+          <div class="flex">
+            <h3>John Tarkpor</h3>
+            <p class="title">Junior Front-end Developer</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Script js-->
+    <script defer src="app.js"></script>
+  </body>
+</html>
